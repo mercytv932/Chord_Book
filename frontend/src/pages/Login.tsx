@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Login() {
   return (
     <form className="login-form">
@@ -21,7 +22,9 @@ function Login() {
           <p>OR</p>
           <hr />
         </div>
-        <button>Create an account</button>
+        <button>
+          Create an account <Link to="/signup">Sign up</Link>{" "}
+        </button>
       </div>
     </form>
   );

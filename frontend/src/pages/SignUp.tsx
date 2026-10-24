@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function SignUp() {
   return (
     <form className="login-form">
@@ -31,8 +33,8 @@ function SignUp() {
           />
         </div>
         <button type="submit">Sign Up</button>
-        <p>
-          Already have an account? <span>Sign in</span>
+        <p className="auth-switch">
+          Already have an account?<Link to="/login">Login</Link>
         </p>
       </div>
     </form>
