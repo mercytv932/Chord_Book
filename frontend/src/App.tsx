@@ -1,10 +1,11 @@
-function App(){
+import Login from "./pages/Login";
+
+function App() {
   return (
     <div>
-<h3>
-  Chord Book App</h3>    </div>
-  )
+      <Login />
+    </div>
+  );
 }
-
 
 export default App;
