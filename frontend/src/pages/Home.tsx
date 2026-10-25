@@ -28,7 +28,19 @@ function Home() {
 
         <div className="home-advert">
           <div>
-            <h3>Save</h3>
+            <h3>Save Songs</h3>
+            <p>Keep your chord library organized.</p>
+          </div>
+
+          <div>
+            <h3>Access Anywhere</h3>
+            <p>Your songs, whenever you need them.</p>
+          </div>
+
+          <div>
+            <h3>Play More</h3>
+            <p>Focus on what matters.</p>
+            <p>making music.</p>
           </div>
         </div>
       </main>
