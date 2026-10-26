@@ -9,3 +9,5 @@ function Favorites() {
 }
 
 export default Favorites;
+
+// The song card belongs here
