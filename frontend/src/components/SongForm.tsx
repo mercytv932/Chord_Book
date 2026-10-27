@@ -1,6 +1,10 @@
 function SongForm() {
   return (
     <div className="form-container">
+      <div>
+        <button>←</button>
+        <h1>Add/Edit Song</h1>
+      </div>
       <form>
         <div className="input-gorup">
           <label htmlFor="songname">Song Name</label>
@@ -23,6 +27,11 @@ function SongForm() {
         <div className="input-group">
           <label htmlFor="key">Key (optional)</label>
           <input type="text" placeholder="e.g. G major" id="key" />
+        </div>
+
+        <div>
+          <button>Cancel</button>
+          <button>Song Song →</button>
         </div>
       </form>
     </div>
