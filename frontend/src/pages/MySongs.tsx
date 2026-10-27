@@ -1,8 +1,8 @@
 function MySongs() {
   return (
     <div className="my-songs">
-      <div className="fav-header-container">
-        <div className="fav-header-texts">
+      <div className="songs-header-container">
+        <div className="songs-header-texts">
           <h1>My Songs</h1>
           <p>Your personal chord library.</p>
         </div>
@@ -14,3 +14,4 @@ function MySongs() {
 }
 
 export default MySongs;
+//Song card will be here
