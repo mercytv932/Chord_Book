@@ -9,7 +9,10 @@ function SongDetails() {
           <h4>Key</h4>
         </div>
       </div>
-      
+      <div className="chords-container">
+        <h2>Chord Progression</h2>
+        <p>Play the chords in this order </p>G - C - G - D
+      </div>
     </div>
   );
 }
