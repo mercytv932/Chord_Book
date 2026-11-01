@@ -11,7 +11,8 @@ function SongDetails() {
       </div>
       <div className="chords-container">
         <h2>Chord Progression</h2>
-        <p>Play the chords in this order </p>G - C - G - D
+        <p>Play the chords in this order </p>
+        <p>G - C - G - D</p>
       </div>
     </div>
   );
