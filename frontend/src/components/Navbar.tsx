@@ -1,16 +1,21 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
-    <aside>
-      <nav>
-        <h3>The Chord Book</h3>
-        <a href="#">Home</a>
-        <a href="#">My Songs</a>
-        <a href="#">Favorites</a>
+    <aside className="navbar">
+      <nav className="navbar-nav">
+        <h3 className="navbar logo">The Chord Book</h3>
+        <Link to="/" className="navbar-link">
+          Home
+        </Link>
+        <Link to="/songs" className="navbar-link">
+          My Songs
+        </Link>
+        <Link to="/favorites" className="navbar-link">
+          Favorites
+        </Link>
       </nav>
-      <button>
-        {" "}
-        <span></span>Logout
-      </button>
+      <button className="logout-button">Logout</button>
     </aside>
   );
 }
