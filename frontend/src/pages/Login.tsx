@@ -35,7 +35,9 @@ function Login() {
           <p>OR</p>
           <hr />
         </div>
-        <Link to="/signup">Create an account</Link>{" "}
+        <Link to="/signup" className="auth-switch-sign-up">
+          Create an account
+        </Link>{" "}
       </div>
     </form>
   );

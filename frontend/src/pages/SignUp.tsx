@@ -9,32 +9,52 @@ function SignUp() {
       <div>
         <div className="input-group">
           <label htmlFor="username">Username</label>
-          <input type="text" id="username" placeholder="Your username" />
+          <input
+            type="text"
+            id="username"
+            name="
+          username"
+            required
+            placeholder="Your username"
+          />
         </div>
         <div className="input-group">
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="youremail@gmail.com" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="youremail@gmail.com"
+          />
         </div>
-        <div className="input group">
+        <div className="input-group">
           <label htmlFor="Password">Password</label>
           <input
             type="password"
             id="password"
+            name="password"
+            required
             placeholder="Create a password"
           />
         </div>
 
-        <div className="input group">
+        <div className="input-group">
           <label htmlFor="confirm-password">Confirm Password</label>
           <input
             type="password"
             id="confirm-password"
+            name="confirmPassword"
+            required
             placeholder="Confirm your password"
           />
         </div>
         <button type="submit">Sign Up</button>
         <p className="auth-switch">
-          Already have an account?<Link to="/login">Login</Link>
+          Already have an account?
+          <Link to="/login" className="auth-switch-login">
+            Login
+          </Link>
         </p>
       </div>
     </form>
