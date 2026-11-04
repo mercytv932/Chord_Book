@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function MySongs() {
   return (
     <div className="my-songs">
@@ -6,9 +7,15 @@ function MySongs() {
           <h1>My Songs</h1>
           <p>Your personal chord library.</p>
         </div>
-        <button>+ Add Song</button>
+        <Link to="/songs/new" className="add-song-button"></Link>
       </div>
-      <input type="text" placeholder=" Search by song or artist..." />
+      <input
+        type="text"
+        className="search-songs"
+        placeholder=" Search by song or artist..."
+      />
+
+      <div className="songs-grid">all songs go here</div>
     </div>
   );
 }
