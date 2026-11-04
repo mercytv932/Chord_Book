@@ -2,36 +2,42 @@ function SongForm() {
   return (
     <div className="form-container">
       <div>
-        <button>←</button>
+        <button type="button">←</button>
         <h1>Add/Edit Song</h1>
       </div>
       <form>
-        <div className="input-gorup">
+        <div className="input-group">
           <label htmlFor="songname">Song Name</label>
           <input
             type="text"
             placeholder="e.g. What a beautiful name it is"
             id="songname"
+            name="songName"
           />
         </div>
         <div className="input-group">
           <label htmlFor="artist">Artist</label>
-          <input type="text" placeholder="e.g. john Noah" id="artist" />
+          <input type="text" placeholder="e.g. johnny Johnson" id="artist" />
         </div>
         <div className="input-group">
-          <label htmlFor="">Chord Progression</label>
-          <input type="text" placeholder="e.g. 1 - 6 - 4 - 5" />
+          <label htmlFor="chord-progression">Chord Progression</label>
+          <input
+            type="text"
+            placeholder="e.g. 1 - 6 - 4 - 5"
+            id="chord-progression"
+            name="chordProgression"
+          />
           <p>Write the chords in the order you play them.</p>
         </div>
 
         <div className="input-group">
           <label htmlFor="key">Key (optional)</label>
-          <input type="text" placeholder="e.g. G major" id="key" />
+          <input type="text" placeholder="e.g. G major" id="key" name="key" />
         </div>
 
         <div>
-          <button>Cancel</button>
-          <button>Song Song →</button>
+          <button type="button">Cancel</button>
+          <button type="submit">Save Song →</button>
         </div>
       </form>
     </div>

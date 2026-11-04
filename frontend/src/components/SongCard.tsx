@@ -9,12 +9,12 @@ function SongCard() {
         <p>Artist Name</p>
         <p>Song Key</p>
 
-        <div className="chords">
-          <span>Chords</span>
-          <p>C - Am - F - G</p>
+        <div className="song-chords">
+          <span className="span-chords">Chords</span>
+          <p className="chord-progression">C - Am - F - G</p>
         </div>
       </div>
-      <button>Favorite ❤️ </button>
+      <button className="favorite-button">Favorite ❤️ </button>
     </div>
   );
 }
