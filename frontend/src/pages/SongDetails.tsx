@@ -1,16 +1,22 @@
+import songCardImage from "../assets/songCardImage.png.jpeg";
+
 function SongDetails() {
   return (
     <div className="song-details-container">
-      <div className="song detail">
-        <img src="" alt="" />
+      <div className="song-detail">
+        <img
+          src={songCardImage}
+          alt="piano cover"
+          className="song-cover-image"
+        />
         <div>
-          <h1>Title</h1>
-          <p>Artist</p>
-          <h4>Key</h4>
+          <h1>Song.Title</h1>
+          <p>Song.Artist</p>
+          <h4>Song.Key</h4>
         </div>
       </div>
       <div className="chords-container">
-        <h2>Chord Progression</h2>
+        <h3>Chord Progression</h3>
         <p>Play the chords in this order </p>
         <p>G - C - G - D</p>
       </div>
