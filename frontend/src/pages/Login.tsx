@@ -8,13 +8,26 @@ function Login() {
       <div>
         <div className="input-group">
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="youremail@gmail.com" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="youremail@gmail.com"
+          />
         </div>
-        <div className="input group">
+        <div className="input-group">
           <label htmlFor="Password">Password</label>
-          <input type="password" id="password" placeholder="Your password" />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Your password"
+          />
         </div>
         <button type="submit">Sign in</button>
+        <input type="password" id="password" />
       </div>
       <div>
         <div className="or">
@@ -22,9 +35,7 @@ function Login() {
           <p>OR</p>
           <hr />
         </div>
-        <button>
-          Create an account <Link to="/signup">Sign up</Link>{" "}
-        </button>
+        <Link to="/signup">Create an account</Link>{" "}
       </div>
     </form>
   );
