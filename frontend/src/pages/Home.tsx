@@ -1,18 +1,17 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <main>
       <div className="home-greet">
         <p>Welcome to</p>
         <h1>The Chord Book</h1>
-        <h3>Your songs. Your Chords</h3>
-        <h3>All in one place.</h3>
+        <h3>Your songs. Your Chords. All in one place.</h3>
 
-        <button>
-          Explore My Songs <span>→</span>
-        </button>
+        <Link to="/songs"> Explore My Songs</Link>
       </div>
 
-      <div className="home-advert">
+      <div className="home-features">
         <div>
           <h3>Save Songs</h3>
           <p>Keep your chord library organized.</p>
@@ -25,8 +24,7 @@ function Home() {
 
         <div>
           <h3>Play More</h3>
-          <p>Focus on what matters.</p>
-          <p>making music.</p>
+          <p>Focus on what matters: making music.</p>
         </div>
       </div>
     </main>
