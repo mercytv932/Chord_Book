@@ -1,0 +1,60 @@
+/* 1. Global Reset & Box Model Fixes */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Elements include padding/borders in their total width/height */
+  margin: 0; /* Strip out aggressive default margins */
+  padding: 0; /* Strip out aggressive default paddings */
+}
+
+/* 2. Fluid & Accessible Body Setup */
+body {
+  min-height: 100vh; /* Fallback for older browsers */
+  min-height: 100dvh; /* Dynamic viewport height to prevent mobile browser UI clipping */
+  line-height: 1.5; /* Baseline accessible readability multiplier */
+  -webkit-font-smoothing: antialiased; /* Crisper font rendering on macOS/iOS devices */
+
+  /* Modern System Font Stack (No layout shifts while downloading custom fonts) */
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+/* 3. Media & Form Elements Overrides */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; /* Remove the weird baseline inline whitespace gap */
+  max-width: 100%; /* Prevent large media files from overflowing containers */
+  height: auto; /* Maintain correct aspect ratios naturally */
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Form controls don't inherit font settings by default; fix that */
+}
+
+/* 4. Accessibility Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
