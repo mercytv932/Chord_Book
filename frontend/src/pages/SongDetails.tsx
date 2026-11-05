@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import songCardImage from "../assets/songCardImage.png.jpeg";
 
 function SongDetails() {
   return (
     <div className="song-details-container">
+      <Link to="/songs">←</Link>
       <div className="song-detail">
         <img
           src={songCardImage}
