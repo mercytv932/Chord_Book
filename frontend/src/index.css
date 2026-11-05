@@ -1,53 +1,50 @@
-/* 1. Global Reset & Box Model Fixes */
+/* 1. Reset space and sizing rules everywhere */
 *,
 *::before,
 *::after {
-  box-sizing: border-box; /* Elements include padding/borders in their total width/height */
-  margin: 0; /* Strip out aggressive default margins */
-  padding: 0; /* Strip out aggressive default paddings */
+  box-sizing: border-box; /* Includes borders and padding in width so things don't overflow */
+  margin: 0; /* Removes default outer spacing */
+  padding: 0; /* Removes default inner spacing */
 }
 
-/* 2. Fluid & Accessible Body Setup */
+/* 2. Page body and text setup */
 body {
-  min-height: 100vh; /* Fallback for older browsers */
-  min-height: 100dvh; /* Dynamic viewport height to prevent mobile browser UI clipping */
-  line-height: 1.5; /* Baseline accessible readability multiplier */
-  -webkit-font-smoothing: antialiased; /* Crisper font rendering on macOS/iOS devices */
+  min-height: 100vh;
+  min-height: 100dvh; /* Fills the full screen height perfectly, even on mobile phones */
+  line-height: 1.5; /* Adds comfortable breathing room between lines of text */
+  -webkit-font-smoothing: antialiased; /* Makes fonts look sharper on Mac and iOS */
 
-  /* Modern System Font Stack (No layout shifts while downloading custom fonts) */
+  /* Uses the premium font already built into the computer or phone for instant loading */
   font-family:
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
+    Helvetica,
+    Arial,
     sans-serif;
 }
 
-/* 3. Media & Form Elements Overrides */
+/* 3. Fixes for images and forms */
 img,
 picture,
 video,
 canvas,
 svg {
-  display: block; /* Remove the weird baseline inline whitespace gap */
-  max-width: 100%; /* Prevent large media files from overflowing containers */
-  height: auto; /* Maintain correct aspect ratios naturally */
+  display: block; /* Removes a strange automatic gap under images */
+  max-width: 100%; /* Keeps large images from spilling off the screen */
+  height: auto; /* Prevents images from getting squished or stretched */
 }
 
 input,
 button,
 textarea,
 select {
-  font: inherit; /* Form controls don't inherit font settings by default; fix that */
+  font: inherit; /* Forces buttons and form inputs to use the main font */
 }
 
-/* 4. Accessibility Preferences */
+/* 4. Support for users who turn off animations on their devices */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
