@@ -8,6 +8,7 @@ import MySongs from "./pages/MySongs";
 import SongDetails from "./pages/SongDetails";
 import Favorites from "./pages/Favorites";
 import Navbar from "./components/Navbar";
+import SongForm from "./components/SongForm";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 
         <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/home" element={<Home />}></Route>
+        <Route path="songorm" element={<SongForm />}></Route>
         <Route path="/mysongs" element={<MySongs />}></Route>
         <Route path="/songdetails/:id" element={<SongDetails />}></Route>
         <Route path="/favorites" element={<Favorites />}></Route>

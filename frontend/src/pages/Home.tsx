@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <main>
+    <div className="home">
       <div className="home-greet">
         <p>Welcome to</p>
         <h1>The Chord Book</h1>
         <h3>Your songs. Your Chords. All in one place.</h3>
 
-        <Link to="/songs"> Explore My Songs</Link>
+        <Link to="/mysongs"> Explore My Songs</Link>
       </div>
 
       <div className="home-features">
@@ -27,7 +27,7 @@ function Home() {
           <p>Focus on what matters: making music.</p>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
 
