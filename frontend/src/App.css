@@ -1,0 +1,27 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(9, 9, 29);
+  
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-nav h3 {
+  font-size: 2rem;
+}
+
+.navbar-link {
+  margin-bottom: 12px;
+}
+
+.logout-button {
+  background-color: rgb(9, 9, 29);
+  border: 1px solid;
+  display: inline-block;
+  width: auto;
+}
