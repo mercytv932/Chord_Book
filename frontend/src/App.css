@@ -56,3 +56,49 @@
   padding: 12px;
   cursor: pointer;
 }
+
+/* Home page */
+.home,
+.home-greet,
+.home-features,
+.extra-features {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-greet p {
+  color: #d1d5db;
+}
+.home-greet h1 {
+  font-size: 40px;
+  color: white;
+}
+.home-greet h1 span {
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6, #ec38d5);
+  background-clip: text;
+  -webkit-backdrop-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-greet h3 {
+  font-size: 21px;
+  color: white;
+}
+
+.home-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #22c1f9, #8b5cf9, #ec38d5);
+  color: white;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.home-button span {
+  font-size: 20px;
+  line-height: 1;
+}

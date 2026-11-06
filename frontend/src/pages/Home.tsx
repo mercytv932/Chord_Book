@@ -5,10 +5,15 @@ function Home() {
     <div className="home">
       <div className="home-greet">
         <p>Welcome to</p>
-        <h1>The Chord Book</h1>
+        <h1>
+          The <span>Chord</span> Book
+        </h1>
         <h3>Your songs. Your Chords. All in one place.</h3>
 
-        <Link to="/mysongs"> Explore My Songs</Link>
+        <Link to="/mysongs" className="home-button">
+          {" "}
+          Explore My Songs <span>→</span>
+        </Link>
       </div>
 
       <div className="home-features">
