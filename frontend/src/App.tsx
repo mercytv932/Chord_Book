@@ -7,24 +7,23 @@ import Home from "./pages/Home";
 import MySongs from "./pages/MySongs";
 import SongDetails from "./pages/SongDetails";
 import Favorites from "./pages/Favorites";
-import Navbar from "./components/Navbar";
 import SongForm from "./components/SongForm";
+import AppLayout from "./components/AppLAyout";
 
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Navigate to="/login" replace />}></Route>
-
+        <Route path="/" element={<Navigate to="/home" replace />}></Route>
         <Route path="/login" element={<Login />}></Route>
-
         <Route path="/signup" element={<SignUp />}></Route>
-        <Route path="/home" element={<Home />}></Route>
-        <Route path="songorm" element={<SongForm />}></Route>
-        <Route path="/mysongs" element={<MySongs />}></Route>
-        <Route path="/songdetails/:id" element={<SongDetails />}></Route>
-        <Route path="/favorites" element={<Favorites />}></Route>
+        <Route element={<AppLayout />}>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="songs/new" element={<SongForm />}></Route>
+          <Route path="/mysongs" element={<MySongs />}></Route>
+          <Route path="/songdetails/:id" element={<SongDetails />}></Route>
+          <Route path="/favorites" element={<Favorites />}></Route>
+        </Route>
       </Routes>
     </>
   );

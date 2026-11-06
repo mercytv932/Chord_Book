@@ -5,7 +5,7 @@
   box-sizing: border-box; /* Includes borders and padding in width so things don't overflow */
   margin: 0; /* Removes default outer spacing */
   padding: 0; /* Removes default inner spacing */
-  color: white;
+  /* color: white; */
 }
 
 /* 2. Page body and text setup */
@@ -14,7 +14,7 @@ body {
   min-height: 100dvh; /* Fills the full screen height perfectly, even on mobile phones */
   line-height: 1.5; /* Adds comfortable breathing room between lines of text */
   -webkit-font-smoothing: antialiased; /* Makes fonts look sharper on Mac and iOS */
-  background: url("./assets/BodyBackground.png");
+  /* background: url("./assets/BodyBackground.png"); */
   /* Uses the premium font already built into the computer or phone for instant loading */
   font-family:
     system-ui,

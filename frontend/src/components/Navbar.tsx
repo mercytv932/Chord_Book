@@ -1,19 +1,34 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <aside className="navbar">
       <nav className="navbar-nav">
         <h3 className="navbar logo">The Chord Book</h3>
-        <Link to="/" className="navbar-link">
+        <NavLink
+          to="/home"
+          className={({ isActive }) =>
+            isActive ? "navbar-link active" : "navbar-link"
+          }
+        >
           Home
-        </Link>
-        <Link to="/songs" className="navbar-link">
+        </NavLink>
+        <NavLink
+          to="/songs"
+          className={({ isActive }) =>
+            isActive ? "navbar-link active" : "navbar-link"
+          }
+        >
           My Songs
-        </Link>
-        <Link to="/favorites" className="navbar-link">
+        </NavLink>
+        <NavLink
+          to="/favorites"
+          className={({ isActive }) =>
+            isActive ? "navbar-link active" : "navbar-link"
+          }
+        >
           Favorites
-        </Link>
+        </NavLink>
       </nav>
       <button className="logout-button">Logout</button>
     </aside>
