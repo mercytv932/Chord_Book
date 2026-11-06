@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <aside className="navbar">
       <nav className="navbar-nav">
-        <h3 className="navbar logo">The Chord Book</h3>
+        <h3 className="navbar-logo">The Chord Book</h3>
         <NavLink
           to="/home"
           className={({ isActive }) =>
@@ -14,7 +14,7 @@ function Navbar() {
           Home
         </NavLink>
         <NavLink
-          to="/songs"
+          to="/mysongs"
           className={({ isActive }) =>
             isActive ? "navbar-link active" : "navbar-link"
           }
