@@ -1,10 +1,14 @@
 import { NavLink } from "react-router-dom";
+import { Music2 } from "lucide-react";
 
 function Navbar() {
   return (
     <aside className="navbar">
       <nav className="navbar-nav">
-        <h3 className="navbar-logo">The Chord Book</h3>
+        <div className="navbar-brand">
+          <Music2 className="navbar-music-icon" />
+          <h3 className="navbar-title">The Chord Book</h3>
+        </div>
         <NavLink
           to="/home"
           className={({ isActive }) =>
