@@ -173,7 +173,11 @@
 /* My Songs */
 .my-songs {
   display: flex;
+  flex-direction: column;
   background-color: #080b1c;
+  min-height: 100vh;
+  padding: 30px;
+  gap: 20px;
 }
 
 .songs-header-container {
