@@ -17,7 +17,7 @@ function MySongs() {
         placeholder=" Search by song or artist..."
       />
 
-      <div className="songs-grid">all songs go here</div>
+      <div className="songs-grid"></div>
     </div>
   );
 }
