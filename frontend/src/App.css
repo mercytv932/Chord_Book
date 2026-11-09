@@ -182,15 +182,17 @@
 
 .songs-header-container {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-.songs-header-text h1 {
+.songs-header-texts h1 {
   font-size: 32px;
   color: white;
 }
 
-.songs-header-text p {
+.songs-header-texts p {
   font-size: 14px;
   color: lightgray;
 }
@@ -198,19 +200,28 @@
 .add-song-button {
   font-size: 14px;
   color: white;
-  border-radius: 7px;
-  padding: 7px 12px;
+  border-radius: 50px;
+  padding: 10px 20px;
   text-decoration: none;
   background: linear-gradient(90deg, #22c1f9, #8b5cf9, #ec38d5);
 }
 
 .search-songs {
-  padding: 15px 50px;
+  width: 100%;
+  padding: 15px 20px;
   border-radius: 7px;
   border: 1px solid #252544;
+  background-color: #10172b;
+  color: white;
+  outline: none;
 }
 
+.search-songs::placeholder {
+  color: #9ca3af;
+}
 .songs-grid {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
   background-color: #080b1c;
 }
