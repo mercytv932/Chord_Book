@@ -15,6 +15,7 @@
   flex-shrink: 0;
   flex-direction: column;
   background-color: rgb(9, 9, 29);
+  border-right: 1px solid #151537;
   width: 220px;
   min-height: 100vh;
   padding: 20px;
@@ -170,7 +171,7 @@
   color: lightgray;
 }
 
-/* My Songs */
+/* My Songs page */
 .my-songs {
   display: flex;
   flex-direction: column;
@@ -220,6 +221,47 @@
   color: #9ca3af;
 }
 .songs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  background-color: #080b1c;
+}
+
+/* Favorites page*/
+.favorites {
+  display: flex;
+  flex-direction: column;
+  background-color: #080b1c;
+  min-height: 100vh;
+  padding: 30px;
+  gap: 20px;
+}
+.favorites-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.favorites-header h1 {
+  font-size: 32px;
+  color: white;
+}
+
+.favorites-header p {
+  font-size: 14px;
+  color: lightgray;
+}
+
+.favorites-search {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 7px;
+  border: 1px solid #252544;
+  background-color: #10172b;
+  color: white;
+  outline: none;
+}
+
+.favorites-songs {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 15px;

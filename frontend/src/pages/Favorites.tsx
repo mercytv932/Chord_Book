@@ -1,8 +1,12 @@
 function Favorites() {
   return (
     <div className="favorites">
-      <h1>Favorites</h1>
-      <p>Your go to songs, always.</p>
+      <div className="favorites-header">
+        {" "}
+        <h1>Favorites</h1>
+        <p>Your go to songs, always.</p>
+      </div>
+
       <input
         type="text"
         placeholder="Search your favorites..."
