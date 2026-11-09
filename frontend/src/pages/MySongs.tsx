@@ -7,7 +7,9 @@ function MySongs() {
           <h1>My Songs</h1>
           <p>Your personal chord library.</p>
         </div>
-        <Link to="/songs/new" className="add-song-button"></Link>
+        <Link to="/songs/new" className="add-song-button">
+          + Add Song
+        </Link>
       </div>
       <input
         type="text"

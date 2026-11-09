@@ -169,3 +169,44 @@
 .features p {
   color: lightgray;
 }
+
+/* My Songs */
+.my-songs {
+  display: flex;
+  background-color: #080b1c;
+}
+
+.songs-header-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.songs-header-text h1 {
+  font-size: 32px;
+  color: white;
+}
+
+.songs-header-text p {
+  font-size: 14px;
+  color: lightgray;
+}
+
+.add-song-button {
+  font-size: 14px;
+  color: white;
+  border-radius: 7px;
+  padding: 7px 12px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #22c1f9, #8b5cf9, #ec38d5);
+}
+
+.search-songs {
+  padding: 15px 50px;
+  border-radius: 7px;
+  border: 1px solid #252544;
+}
+
+.songs-grid {
+  display: grid;
+  background-color: #080b1c;
+}
