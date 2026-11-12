@@ -333,3 +333,65 @@
 .favorite-button:hover {
   transform: scale(1.2);
 }
+
+/* Add Song page */
+
+.add-song {
+  min-height: 100vh;
+  background-color: #080b1c;
+  padding: 30px;
+  color: white;
+}
+
+.add-song h1 {
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+/* Add Song Form */
+.form-container {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #10172b;
+  border: 1px solid #252544;
+  border-radius: 12px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  background-color: #080b1c;
+  border: 1px solid #252544;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #8b5cf6;
+}
+
+.input-group p {
+  color: #9ca3af;
+  font-size: 12px;
+}
