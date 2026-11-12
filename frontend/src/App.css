@@ -395,3 +395,31 @@
   color: #9ca3af;
   font-size: 12px;
 }
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-button {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid #252544;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.save-button {
+  padding: 12px 24px;
+  background-color: linear-gradient(90deg, #6366f1, #a855f7);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  opacity: 0.9;
+}

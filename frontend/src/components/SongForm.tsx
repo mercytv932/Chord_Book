@@ -31,9 +31,13 @@ function SongForm() {
           <input type="text" placeholder="e.g. G major" id="key" name="key" />
         </div>
 
-        <div>
-          <button type="button">Cancel</button>
-          <button type="submit">Save Song →</button>
+        <div className="form-buttons">
+          <button type="button" className="cancel-button">
+            Cancel
+          </button>
+          <button type="submit" className="save-button">
+            Save Song →
+          </button>
         </div>
       </form>
     </div>
