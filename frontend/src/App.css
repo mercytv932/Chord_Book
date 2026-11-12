@@ -409,7 +409,8 @@
 .input-group input:focus {
   border-color: #8b5cf6;
 }
-.input-group input::placeholder {
+.input-group input::placeholder,
+.input-group textarea::placeholder {
   color: #9ca3af;
   font-size: 14px;
 }
