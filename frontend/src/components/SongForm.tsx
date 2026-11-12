@@ -1,10 +1,6 @@
 function SongForm() {
   return (
     <div className="form-container">
-      <div>
-        <button type="button">←</button>
-        <h1>Add/Edit Song</h1>
-      </div>
       <form>
         <div className="input-group">
           <label htmlFor="songname">Song Name</label>
