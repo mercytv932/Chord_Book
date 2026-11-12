@@ -6,7 +6,7 @@ function AddSong() {
   const navigate = useNavigate();
   return (
     <div className="add-song">
-      <div>
+      <div className="add-song-header">
         <button
           type="button"
           className="back-button"

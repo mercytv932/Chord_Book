@@ -17,11 +17,11 @@ function SongForm() {
         </div>
         <div className="input-group">
           <label htmlFor="chord-progression">Chord Progression</label>
-          <input
-            type="text"
-            placeholder="e.g. 1 - 6 - 4 - 5"
+          <textarea
             id="chord-progression"
             name="chordProgression"
+            placeholder="e.g. 1 - 6 - 4 - 5"
+            rows={4}
           />
           <p>Write the chords in the order you play them.</p>
         </div>

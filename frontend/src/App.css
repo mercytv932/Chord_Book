@@ -345,7 +345,6 @@
 
 .add-song h1 {
   font-size: 28px;
-  margin-top: 15px;
 }
 
 /* Add Song Form */
@@ -398,28 +397,53 @@
 
 .form-buttons {
   display: flex;
-  justify-content: flex-end;
   gap: 12px;
 }
 
 .cancel-button {
+  flex: 1;
   padding: 12px 24px;
-  background-color: transparent;
+  background: transparent;
   border: 1px solid #252544;
-  border-radius: 8px;
+  border-radius: 30px;
   color: white;
   cursor: pointer;
 }
 
 .save-button {
+  flex: 1;
   padding: 12px 24px;
-  background-color: linear-gradient(90deg, #6366f1, #a855f7);
+  background: linear-gradient(90deg, #22c1f9, #8b5cf9, #ec38d5);
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   color: white;
   cursor: pointer;
 }
 
 .save-button:hover {
   opacity: 0.9;
+}
+
+.add-song-header {
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #aeb4c6;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #c084fc;
 }
