@@ -15,11 +15,7 @@ function SongCard() {
           <p>Artist Name</p>
           <p>Song Key</p>
         </div>
-
-        <div className="song-chords">
-          <span className="span-chords">Chords</span>
-          <p className="chord-progression">C - Am - F - G</p>
-        </div>
+        <p className="chord-progression">C - Am - F - G</p>
       </div>
       <button className="favorite-button">Favorite ❤️ </button>
     </div>

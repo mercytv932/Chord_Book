@@ -285,9 +285,37 @@
 .song-card-image {
   width: 100px;
   height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 
 .song-card-content {
   display: flex;
-  gap: 7px;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.chord-progression {
+  color: #aeb4c6;
+  font-size: 12px;
+}
+
+.song-info h3 {
+  color: white;
+}
+
+.song-info p {
+  color: #aeb4c6;
+  font-size: 13px;
+}
+
+.song-key {
+  display: inline-block;
+  background-color: #222a43;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-bottom: 6px;
 }
