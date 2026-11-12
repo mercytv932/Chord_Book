@@ -270,9 +270,16 @@
 
 /* SongCard */
 .song-card {
-  display: grid;
-  width: 400px;
-  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  padding: 12px;
+
+  background-color: #10172b;
+  border: 1px solid #252544;
+  border-radius: 10px;
 }
 
 .song-card-image {
@@ -284,4 +291,3 @@
   display: flex;
   gap: 7px;
 }
-
