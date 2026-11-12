@@ -319,3 +319,17 @@
   border-radius: 5px;
   margin-bottom: 6px;
 }
+
+.favorite-button {
+  background: transparent;
+  border: none;
+  color: #c084fc;
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.favorite-button:hover {
+  transform: scale(1.2);
+}

@@ -1,6 +1,9 @@
+import { Heart } from "lucide-react";
+import { useState } from "react";
 import songCardImage from "../assets/songCardImage.png.jpeg";
 
 function SongCard() {
+  const [isFavorite, setIsFavorite] = useState(false);
   return (
     <div className="song-card">
       <img
@@ -17,7 +20,18 @@ function SongCard() {
         </div>
         <p className="chord-progression">C - Am - F - G</p>
       </div>
-      <button className="favorite-button">Favorite ❤️ </button>
+      <button
+        className="favorite-button"
+        type="button"
+        onClick={() => setIsFavorite(!isFavorite)}
+      >
+        {" "}
+        <Heart
+          size={20}
+          fill={isFavorite ? "red" : "none"}
+          color={isFavorite ? "red" : "#c084fc"}
+        />
+      </button>
     </div>
   );
 }
