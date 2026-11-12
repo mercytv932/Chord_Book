@@ -260,6 +260,9 @@
   color: white;
   outline: none;
 }
+.favorites-search::placeholder {
+  color: #9ca3af;
+}
 
 .favorites-songs {
   display: grid;
@@ -386,8 +389,29 @@
   outline: none;
 }
 
+.input-group textarea {
+  width: 100%;
+  padding: 14px;
+  background-color: #080b1c;
+  border: 1px solid #252544;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  resize: vertical;
+}
+
+.input-group textarea:focus {
+  border-color: #8b5cf6;
+}
+
 .input-group input:focus {
   border-color: #8b5cf6;
+}
+.input-group input::placeholder {
+  color: #9ca3af;
+  font-size: 14px;
 }
 
 .input-group p {
