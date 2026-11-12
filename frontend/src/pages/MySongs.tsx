@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SongCard from "../components/SongCard";
 function MySongs() {
   return (
     <div className="my-songs">
@@ -17,7 +18,9 @@ function MySongs() {
         placeholder=" Search by song or artist..."
       />
 
-      <div className="songs-grid"></div>
+      <div className="songs-grid">
+        <SongCard />
+      </div>
     </div>
   );
 }

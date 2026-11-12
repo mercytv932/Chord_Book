@@ -267,3 +267,21 @@
   gap: 15px;
   background-color: #080b1c;
 }
+
+/* SongCard */
+.song-card {
+  display: grid;
+  width: 400px;
+  height: auto;
+}
+
+.song-card-image {
+  width: 100px;
+  height: 80px;
+}
+
+.song-card-content {
+  display: flex;
+  gap: 7px;
+}
+

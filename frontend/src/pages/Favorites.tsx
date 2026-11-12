@@ -1,3 +1,5 @@
+import SongCard from "../components/SongCard";
+
 function Favorites() {
   return (
     <div className="favorites">
@@ -13,7 +15,10 @@ function Favorites() {
         className="favorites-search"
       />
 
-      <div className="favorite-songs">{/* SongCard components go here */}</div>
+      <div className="favorites-songs">
+        <SongCard />
+        {/* SongCard components go here */}
+      </div>
     </div>
   );
 }
