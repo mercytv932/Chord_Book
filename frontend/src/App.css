@@ -573,7 +573,15 @@
 }
 
 .login-text h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
   font-size: 18px;
+}
+
+.login-text h3 svg {
+  color: #c084fc;
 }
 
 .login-text h1 {

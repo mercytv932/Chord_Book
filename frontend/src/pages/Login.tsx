@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import { Music2 } from "lucide-react";
 function Login() {
   return (
     <form className="login-form">
-      <div className="login-texts">
-        <h3>The Chord Book</h3>
+      <div className="login-text">
+        <h3>
+          <Music2 size={24} /> The Chord Book
+        </h3>
         <h1>Welcome back</h1>
         <p>Sign in and enjoy your music in harmony</p>
       </div>
