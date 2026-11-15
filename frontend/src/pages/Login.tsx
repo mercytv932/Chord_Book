@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 function Login() {
   return (
     <form className="login-form">
-      <h3>The Chord Book</h3>
-      <h1>Welcome back</h1>
-      <p>Sign in and enjoy your music in harmony</p>
+      <div className="login-texts">
+        <h3>The Chord Book</h3>
+        <h1>Welcome back</h1>
+        <p>Sign in and enjoy your music in harmony</p>
+      </div>
       <div>
         <div className="input-group">
           <label htmlFor="email">Email</label>
@@ -17,7 +19,7 @@ function Login() {
           />
         </div>
         <div className="input-group">
-          <label htmlFor="Password">Password</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             id="password"
@@ -27,7 +29,6 @@ function Login() {
           />
         </div>
         <button type="submit">Sign in</button>
-        <input type="password" id="password" />
       </div>
       <div>
         <div className="or">

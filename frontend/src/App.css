@@ -550,3 +550,37 @@
 .auth-switch-login:hover {
   text-decoration: underline;
 }
+
+/* Login page */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+
+  max-width: 450px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px;
+  color: white;
+}
+
+.login-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.login-text h3 {
+  font-size: 18px;
+}
+
+.login-text h1 {
+  font-size: 28px;
+}
+
+.login-text p {
+  color: #9ca3af;
+  font-size: 14px;
+}
