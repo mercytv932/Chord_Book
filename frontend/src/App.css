@@ -585,6 +585,22 @@
   font-size: 14px;
 }
 
+.signin-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #22c1f9, #8b5cf9, #ec38d5);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.signin-button:hover {
+  opacity: 0.9;
+}
+
 .or {
   display: flex;
   align-items: center;

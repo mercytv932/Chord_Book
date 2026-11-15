@@ -28,7 +28,9 @@ function Login() {
             placeholder="Your password"
           />
         </div>
-        <button type="submit">Sign in</button>
+        <button type="submit" className="signin-button">
+          Sign in
+        </button>
       </div>
       <div>
         <div className="or">
