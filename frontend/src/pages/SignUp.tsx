@@ -1,19 +1,25 @@
 import { Link } from "react-router-dom";
+import { Music2 } from "lucide-react";
 
 function SignUp() {
   return (
-    <form className="login-form">
-      <h3>The Chord Book</h3>
-      <h1>Create your account</h1>
-      <p>Start building your chord library</p>
+    <form className="signup-form">
+      <div className="signup-text">
+        <h3>
+          {" "}
+          <Music2 size={24} /> The Chord Book
+        </h3>
+        <h1>Create your account</h1>
+        <p>Start building your chord library</p>
+      </div>
+
       <div>
         <div className="input-group">
           <label htmlFor="username">Username</label>
           <input
             type="text"
             id="username"
-            name="
-          username"
+            name="username"
             required
             placeholder="Your username"
           />
@@ -29,7 +35,7 @@ function SignUp() {
           />
         </div>
         <div className="input-group">
-          <label htmlFor="Password">Password</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             id="password"
