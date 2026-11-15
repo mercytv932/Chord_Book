@@ -71,6 +71,11 @@
   border: none;
   padding: 12px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.logout-button:hover {
+  background-color: #252544;
 }
 
 /* Home page */

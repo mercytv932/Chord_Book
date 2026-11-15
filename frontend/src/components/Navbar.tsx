@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Music2 } from "lucide-react";
 
 function Navbar() {
@@ -34,7 +34,9 @@ function Navbar() {
           Favorites
         </NavLink>
       </nav>
-      <button className="logout-button">Logout</button>
+      <Link to="/login" className="logout-button">
+        Logout
+      </Link>
     </aside>
   );
 }
