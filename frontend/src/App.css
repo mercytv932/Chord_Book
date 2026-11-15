@@ -602,3 +602,17 @@
 .or p {
   font-size: 12px;
 }
+
+.auth-switch-sign-up {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #8b5cf6;
+  border-radius: 8px;
+  color: #c084fc;
+  text-decoration: none;
+}
+
+.auth-switch-sign-up:hover {
+  background-color: #10172b;
+}
