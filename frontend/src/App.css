@@ -514,3 +514,39 @@
   color: #9ca3af;
   font-size: 14px;
 }
+
+.signup-form .input-group {
+  margin-bottom: 16px;
+}
+
+.signup-form button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #22c1f9, #8b5cf9, #ec38d5);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.signup-form button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.auth-switch-login {
+  color: #c084fc;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.auth-switch-login:hover {
+  text-decoration: underline;
+}
