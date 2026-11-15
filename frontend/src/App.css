@@ -584,3 +584,21 @@
   color: #9ca3af;
   font-size: 14px;
 }
+
+.or {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  color: #9ca3af;
+}
+
+.or hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #252544;
+}
+
+.or p {
+  font-size: 12px;
+}
